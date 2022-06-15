@@ -5,20 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-=======
+
     "start": "node index.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
->>>>>>> Stashed changes
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< Updated upstream
-=======
     "cors": "^2.8.5",
->>>>>>> Stashed changes
     "express": "^4.18.1",
     "express-graphql": "^0.12.0",
     "graphql": "^16.5.0",

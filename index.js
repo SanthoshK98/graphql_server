@@ -3,14 +3,11 @@ const mongoose = require('mongoose')
 const app = express()
 const {graphqlHTTP} = require('express-graphql')
 const schema = require('./schema/schema')
-const PORT = 4000
-=======
 const cors = require('cors')
 const {graphqlHTTP} = require('express-graphql')
 const schema = require('./schema/schema')
 const PORT = process.env.PORT || 4000
 app.use(cors())
->>>>>>> Stashed changes
 
 const connect = async ()=>{
     try{
@@ -27,13 +24,10 @@ app.use('/graphql',graphqlHTTP({
     graphiql: true
 }))
 
-<<<<<<< Updated upstream
-=======
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
 }
 
->>>>>>> Stashed changes
 app.listen(PORT,()=>{
     console.log(`Listening on PORT ${PORT}`)
 })
